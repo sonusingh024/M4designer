@@ -1,0 +1,12 @@
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #ffffff;
+&__text {
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: $twocolor;
+    }
+  }
+}

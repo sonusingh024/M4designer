@@ -1,0 +1,98 @@
+.slider-section {
+  padding-top: 135px;
+  padding-bottom: 90px;
+  .main-slider {
+    &__detail {
+      max-width: 840px;
+      margin: 0 auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+      &--image {
+        text-align: center;
+        margin-bottom: 1rem;
+        max-width: 100px;
+        margin: auto;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+      }
+      h3 {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+        text-align: center;
+      }
+      h6 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        color: $twocolor;
+        text-align: center;
+      }
+    }
+  }
+}
+//---------custom slider-css
+.one-slider > .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  padding: 4px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+// changing the dots
+.one-slider > .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 1;
+  color: #121212;
+  opacity: 0.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// for changing dots color(active)
+.one-slider > .slick-dots li.slick-active button:before {
+  color: #121212;
+  opacity: 1;
+  transform: scale(1.5);
+}
+// for changing dots color(without-active)
+.one-slider {
+  > .slick-dots {
+    li {
+      margin: 3px;
+    }
+  }
+}
+
+// for changing dots position
+.one-slider > .slick-dots {
+  top: -50px;
+}

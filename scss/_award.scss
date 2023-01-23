@@ -1,0 +1,38 @@
+.section-awards {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+  .container {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .awards {
+    &__grid {
+      margin-top: 2rem;
+      &--one {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 5rem;
+        h6 {
+          font-size: 1.8rem;
+          line-height: 1.5;
+          font-weight: 400;
+        }
+        h5 {
+          font-size: 1.8rem;
+          line-height: 1.5;
+          font-weight: bold;
+          margin-bottom: 0.75rem;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin-bottom: 0.75rem;
+          color: $twocolor;
+        }
+      }
+    }
+  }
+}

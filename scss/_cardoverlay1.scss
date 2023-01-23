@@ -1,0 +1,70 @@
+.card-layone {
+  margin-bottom: 30px;
+  .card-wrapper {
+    overflow: hidden;
+    height: 100%;
+    @media only screen and (max-width: 992px) {
+      height: 500px;
+    }
+    .card-img {
+      position: relative;
+      transition: 0.2s;
+      height: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+      .card-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.3s;
+        @media only screen and (max-width: 992px) {
+          opacity: 1;
+        }
+
+        h4 {
+          font-size: 1.1rem;
+          line-height: 1.5;
+          font-weight: 300;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 1.5;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// -------------------MEDIA-QUERIES------------
+@media only screen and (max-width: 992px) {
+  .md-c {
+    flex-direction: column;
+  }
+  .md-100 {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .h-50 {
+    height: auto;
+  }
+}

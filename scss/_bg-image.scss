@@ -1,0 +1,36 @@
+.unique {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: linear-gradient(to bottom, #ffffffab, #ffffffab),
+    url(../images/background3.jpeg) no-repeat center;
+  &__tittle {
+    margin-bottom: 3rem;
+    h3 {
+      font-size: 4.4rem;
+      line-height: 1.1;
+      margin-bottom: 3rem;
+      @media only screen and (max-width: 992px) {
+        font-size: 3.5rem;
+      }
+    }
+  }
+  &__grid {
+    &--card {
+      margin-bottom: 2rem;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+        text-align: center;
+      }
+      h4 {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      h3 {
+        font-size: 4.4rem;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+    }
+  }
+}

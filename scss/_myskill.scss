@@ -1,0 +1,54 @@
+.myskill {
+  &__text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+    h4 {
+      letter-spacing: 3px;
+      font-weight: 500 !important;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: $twocolor;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 4.4rem;
+      line-height: 1.1;
+      padding-bottom: 1rem;
+      margin-bottom: 0.4rem;
+      @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      margin-bottom: 0.4rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: 400;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+  }
+  &__graph {
+    &--progress {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1.5rem;
+      .progress1 {
+        padding-bottom: 3rem;
+        .progress-text {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// ----------MEDIA--QUERIES-----------
+@media only screen and (max-width: 768px) {
+}
